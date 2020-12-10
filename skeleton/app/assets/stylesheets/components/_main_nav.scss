@@ -1,17 +1,24 @@
 .main-nav {
-
+  display: flex;
+  // flex-direction: row;
+  justify-content: space-between;
+  padding: 10px;
+  border-bottom: 1px solid lightgray;
 }
 
 .left-nav > ul,
 .right-nav > ul {
-
+  display: flex;
+  // align-items: right;
+  // vertical-align: middle;
 }
 
 .left-nav {
 
   > ul {
     > li {
-
+      padding: 10px 20px 10px 10px;
+      // font-size: 12px;
     }
   }
 
@@ -21,11 +28,13 @@
 }
 
 .right-nav  {
-
+  padding-top: 5px;
   > ul {
-
+    vertical-align: middle;
     > li {
-  
+      padding-left: 2px;
+      font-size: 10px;
+      font-family: serif;
     }
 
     > li:last-of-type {
@@ -38,7 +47,30 @@
   }
 }
 
-.left-nav > ul > li:hover,
-.right-nav > ul > li:last-of-type:hover {
+// .left-nav > ul > li:hover,
+// .right-nav > ul > li:last-of-type:hover {
 
+// }
+
+.left-nav > ul > li:hover {
+  background-color:  $lightest-gray;
 }
+
+.right-nav > ul > li:hover {
+  background-color:  $lightest-blue;
+  }
+
+#options-btn {
+  background-color: $lightest-gray;
+  color: black;
+  font-size: 16px;
+}
+
+// .main-nav::after {
+//   display: inline-block;
+//   content: "";
+//   border-top: .3rem solid black;
+//   width: 4rem;
+//   margin: 0 1rem;
+//   transform: translateY(-1rem);
+// }
