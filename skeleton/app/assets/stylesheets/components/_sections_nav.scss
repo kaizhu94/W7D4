@@ -1,9 +1,39 @@
-.sectionshead {
-	// display: flex;
-	// flex-direction: column;
-	// align-items: center;
+.sectionhead {
+	display: flex;
+	justify-content: center;
+	border-bottom: 1px solid grey;
+	position: relative;
+}
+
+
+.sectionhead ul {
+	display: flex;
+	align-items: center;
+	float: left;
+}
+
+.sectionhead li{
+	padding: 5px;
+}
+
+
+
+.sectionhead a {
+	display: block;
 	// border-bottom: 2px solid black;
-    // position: relative;
+	// justify-content: space-between;
+	text-align: center;
+	// padding: 5px;
+	text-decoration: none;
+	color: black
     // left: 100px;
 	
+}
+.sectionhead a:hover {
+	text-decoration: underline;
+	background-color: darkgray;
+}
+
+#section-all{
+	font-size: 80%;
 }

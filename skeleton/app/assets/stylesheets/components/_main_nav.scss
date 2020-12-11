@@ -65,6 +65,10 @@
   color: black;
   font-size: 16px;
 }
+#options-btn:hover #dropdown-content{
+  display: block;
+}
+
 
 // .main-nav::after {
 //   display: inline-block;
