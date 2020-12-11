@@ -17,6 +17,8 @@ button {
 	border-color: rgb(0, 0, 202);
 	color:white;
 	// font-weight: bold;
+	font-family: $serif;
+	font-size: 12px;
 	padding: 5px;
 	border-radius: 5px;
 	// transition:
@@ -26,10 +28,10 @@ button {
 	// text-align:
 }
 
-button:hover {
-	// background-color:
-	// border-color:
-}
+// button:hover {
+// 	// background-color:
+// 	// border-color:
+// }
 
 /*
 	Header Rules

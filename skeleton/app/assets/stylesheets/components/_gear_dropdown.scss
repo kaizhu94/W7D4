@@ -1,8 +1,65 @@
 // Use the gear_dropdown.png screenshot as a style guide
 #drop-down{
     position: relative;
+    display: block;
+    // transition-duration: 4s
+    // visibility: hidden;
+    // box-shadow: -1px 4px 6px 1px rgba(0, 0, 0, 0.09);
 }
 
 .gear-dropdown{
     position: absolute;
+    // right: 40px;
+    display: none;
+    background-color: white;
+    border: 1px solid lightgray;
+    // visibility: hidden;
+    z-index: 1;
+    box-shadow: -1px 4px 6px 1px rgba(0, 0, 0, 0.09);
+    
+
+}
+.gear-dropdown a, .dropdown-subtitle {
+    font-size: 12px;
+}
+#drop-down:hover .gear-dropdown{
+    display: block;
+    width: 170px;
+    right: 0px;
+    // text-decoration: none;
+    padding: 5px;
+    // color: gray
+    // clear: both;
+}
+
+#drop-down:hover .gear-dropdown a{
+    text-decoration: none;
+    color: gray
+    // padding: 5px
+    // padding: 0 0 5px 0;
+    // color: red;
+    // margin: 120%;
+}
+#drop-down:hover .gear-dropdown li{
+    padding: 5px 0 5px 0;
+    // background-color: gray;
+}
+
+#drop-down:hover .editions, .help{
+    padding-bottom: 5px;
+}
+.gear-dropdown .editions li:hover {
+    background: lightgray;
+}
+#drop-down:hover .gear-dropdown .help a{
+    color: blue;
+    // font-size: 12px;
+    // text-decoration: underline;
+}
+#drop-down:hover .gear-dropdown .help a:hover{
+    text-decoration: underline;
+}
+
+#drop-down:hover .gear-dropdown .editions{
+    border-bottom: 1px solid lightgray;
 }
